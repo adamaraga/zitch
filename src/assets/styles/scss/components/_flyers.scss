@@ -1,0 +1,43 @@
+.flyers {
+  padding: 50px var(--body-padding);
+  position: relative;
+
+  &__main {
+    & img {
+      border-radius: 20px;
+      //   height: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__nav {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 50;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 calc(var(--body-padding) + 10px);
+
+      & button {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+
+        & i {
+          color: $primary-color;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

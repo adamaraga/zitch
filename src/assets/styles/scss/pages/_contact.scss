@@ -1,0 +1,45 @@
+.contact {
+  &__main {
+    padding: 50px var(--body-padding);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 40px;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+
+    &__left {
+      & h2 {
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      &__disc {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 40px;
+        color: #6a6a6a;
+      }
+
+      &__info {
+        &__item {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          margin-bottom: 20px;
+
+          & h5 {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+
+          & p {
+            color: #6a6a6a;
+          }
+        }
+      }
+    }
+  }
+}

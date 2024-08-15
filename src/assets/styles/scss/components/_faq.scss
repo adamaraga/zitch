@@ -1,0 +1,42 @@
+.faq {
+  padding: 50px var(--body-padding);
+  //   background-image: url(../../../images/faq.png);
+  background-color: $tetiary-color;
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  &__main {
+    column-count: 3;
+    margin-top: 40px;
+    gap: 30px;
+
+    @media screen and (max-width: 900px) {
+      column-count: 2;
+    }
+    @media screen and (max-width: 500px) {
+      column-count: 1;
+    }
+
+    &__item {
+      break-inside: avoid;
+      margin-bottom: 20px;
+      border: 1px solid #bfbfbf;
+      border-radius: 20px;
+
+      &__title {
+        padding: 15px 20px;
+        border-bottom: 1px solid #bfbfbf;
+      }
+
+      & p {
+        padding: 15px 20px;
+      }
+    }
+  }
+}

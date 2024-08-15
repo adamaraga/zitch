@@ -1,0 +1,14 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a0e27;
+  min-height: 50px;
+  color: #fff;
+  gap: 10px;
+
+  & a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,36 @@
+.drawer {
+  display: none;
+
+  @media screen and (max-width: 900px) {
+    display: inline-block;
+  }
+
+  &__modal {
+    background-color: $tetiary-color;
+    height: 100vh;
+    width: 80vw;
+    max-width: 350px;
+    padding: 30px;
+    padding-top: 10px;
+
+    &__close {
+      display: flex;
+      justify-content: flex-end;
+      right: -20px;
+      position: relative;
+      margin-bottom: 10px;
+
+      & i {
+        font-size: 25px;
+      }
+    }
+
+    & li {
+      padding: 15px 0;
+
+      //   &:not(:first-child) {
+      border-bottom: 1px solid #dfdfdf;
+      //   }
+    }
+  }
+}
