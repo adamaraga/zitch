@@ -23,8 +23,7 @@ const Hero = () => {
           </h1>
           {/* <h1>Order Food</h1> */}
           <p>
-            Make money transfers, enjoy cashless payment options and get cool
-            loans with Zitch.
+            Buy recharge card and date easily, enjoy cashless payment options.
           </p>
           <div className="hero__main__btn">
             <button className="btnMain">

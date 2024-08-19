@@ -106,6 +106,16 @@ const Footer = ({ alt }) => {
 
         <div className="footer__bottom">
           <div>© 2023 Zitch. All right reserved.</div>
+          <div>
+            <a
+              style={{ color: "#fff" }}
+              target="_blank"
+              rel="noreferrer"
+              href="https://lilysolutions.org"
+            >
+              Powered by Lily solutions.
+            </a>{" "}
+          </div>
           <div className="footer__bottom__links">
             <span>Privacy Policy</span>
             <Link to="/terms">
